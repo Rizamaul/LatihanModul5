@@ -1,0 +1,42 @@
+.page-header {
+    grid-area: "header";
+    background-color: #4f90d1;
+    padding: 20px;
+    height: auto;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+.main-article {
+    grid-area: "main";
+    background-color: #b6b6b6;
+    padding: 15px;
+    height: 100%;
+    margin: auto;
+}
+
+#gambarartikel {
+    float: left;
+    height: 150px;
+}
+
+.page-footer {
+    grid-area: "footer";
+    background-color: #333333;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.article-paragraph {
+    text-align: justify;
+}
